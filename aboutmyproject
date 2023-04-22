@@ -16,4 +16,11 @@ In the game I:
 
 5. In Azure DevOps I used Pipelines to deploy the code onto Azure. I selected Azure Repos Git as the location of my code and selected my repository. I configured my pipeline using the "Python to Linux Web App on Azure" option. In the generated YAML file, I kept the trigger as "main" so if any changes were made in the repos, it would continuously integrate the pipeline.
 
-Skills: Python, using VS Code and Git (+GitHub), Azure DevOps, Pipelines, CI/CD, Azure Web App Deployment
+22/04/23 - issues I ran into:
+
+When deploying the app, I got an error: ##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request
+
+I have since requested a free parallelism grant and once this has been approved my web app should be able to be deployed onto Azure for all to see.
+
+
+Skills learnt: Python, using VS Code and Git (+GitHub), Azure DevOps, Pipelines, CI/CD, Azure Web App Deployment
