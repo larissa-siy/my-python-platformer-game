@@ -34,8 +34,8 @@ In the game I:
 - added gravity using loops to imitate the act of falling / jumping
 - moved the player with animations by loading and splitting sprite sheets
 - adding terrain that the player is able to collide with
-- I added a scrolling background using the offset function
-- I published the local repository onto GitHub and used Git for version control between the local and GitHub repositories.
+- added a scrolling background using the offset function
+- published the local repository onto GitHub and used Git for version control between the local and GitHub repositories.
 
 ****Use YAML or JSON files to define the application configurations, such as database connection strings and environment variables.
 Implement CI/CD pipelines:
@@ -47,8 +47,8 @@ Implement CI/CD pipelines:
 
 ****Enabling security and networking
 
-1. I configured the authentication/authorization for the web application and secured the database.
-2. I configure networking settings. I used a virtual network and network security groups, to control traffic flow and enhance security.
+- I configured the authentication/authorization for the web application and secured the database.
+- I configure networking settings. I used a virtual network and network security groups, to control traffic flow and enhance security.
 
 
 ****Continuous Deployment:
