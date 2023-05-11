@@ -1,7 +1,40 @@
 # my-python-platformer-game
-This is my Python Platform Game repository. Please read aboutmyproject to see what I have done / trying to do.
 
-1. I coded a Platform game animated in Python using Visual Studio Code. I used for loops and functions to create a pixel-perfect collision animated game with sprite sheet and masks. 
+**Project Outline: **
+
+_Project: Deploying a Python Web Application on Azure using Infrastructure as Code (IaC) and CI/CD pipelines_
+
+Overview:
+
+In this project, I will deploy a Python web application on Azure using Infrastructure as Code principles, leveraging Azure DevOps for CI/CD pipelines. We will use Terraform for infrastructure provisioning, YAML for configuration, and Azure services for hosting the web application.
+
+Skills Demonstrated:
+
+- Experience working with a broad set of cloud services
+- Scripting in Bash and PowerShell
+- Infrastructure as Code: Azure DevOps, Terraform
+- Configuration-driven approaches through YAML or JSON
+- Understanding of security principles and cloud networking
+
+Project Steps:
+
+**Set up Azure resources:
+-  After uploading the file I created a resource group on Azure to host my new project. I created a Linux Web App using a Python 3.7 Runtime Stack, within the resource group, to host my Python App.
+- If I was to do this project again, I would use Terraform to define the infrastructure components. Terraform scripts in a combination of Bash and PowerShell to provision the resources would be a time saving way to provision the infrastructure components. However, I imported the infrastructure components using
+
+    ``` 
+  resource azurerm_resource_group my-python-platformer-game_group {
+  name = "my-python-platformer-game_group"
+  }
+  
+  terraform import "azurerm_resource_group.my-python-platformer-game_group" "/subscriptions/772f1a68-850d-4639-92cc-278f98532405/resourceGroups/my-python-platformer-game_group"
+  
+  terraform init
+
+****Configure the Python web application:
+****Develop a Python web application using a web framework like Flask or Django.
+
+I coded a Platform game animated in Python using Visual Studio Code. I used for loops and functions to create a pixel-perfect collision animated game with sprite sheet and masks. 
 
 In the game I:
 - generated a background using the functions def get_background and def draw
@@ -9,21 +42,28 @@ In the game I:
 - added gravity using loops to imitate the act of falling / jumping
 - moved the player with animations by loading and splitting sprite sheets
 - adding terrain that the player is able to collide with
-- I added a scrolling background using the offset function
+- added a scrolling background using the offset function
+- published the local repository onto GitHub and used Git for version control between the local and GitHub repositories.
 
-2. Once my animation was done, I linked VS Code to GitHub and pushed the file to my Github repository.
+****Use YAML or JSON files to define the application configurations, such as database connection strings and environment variables.
+Implement CI/CD pipelines:
 
-3. After uploading the file I created a resource group on Azure to host my new project. I created a Linux Web App using a Python 3.7 Runtime Stack, within the resource group, to host my Python App.
+- I linked my GitHub repository to my Azure DevOps account and pushed the GitHub repo into the Azure DevOps repo.
+- I create an Azure DevOps pipeline using YAML to automate the build and deployment processes.
+- Defined stages for building the application, running tests, and deploying to Azure resources.
+- I utilised Azure DevOps tasks to execute commands/scripts, e.g. running Python tests and deploying infrastructure using Terraform.
 
-4. I linked Azure DevOps to my GitHub account and imported the repository from GitHub into Azure DevOps Repos
+****Enabling security and networking
 
-5. In Azure DevOps I used Pipelines to deploy the code onto Azure. I selected Azure Repos Git as the location of my code and selected my repository. I configured my pipeline using the "Python to Linux Web App on Azure" option. In the generated YAML file, I kept the trigger as "main" so if any changes were made in the repos, it would continuously integrate the pipeline.
-
-22/04/23 - issues I ran into:
-
-When deploying the app, I got an error: ##[error]No hosted parallelism has been purchased or granted. To request a free parallelism grant, please fill out the following form https://aka.ms/azpipelines-parallelism-request
-
-I have since requested a free parallelism grant and once this has been approved my web app should be able to be deployed onto Azure for all to see.
+- I configured the authentication/authorization for the web application and secured the database.
+- I configure networking settings. I used a virtual network and network security groups, to control traffic flow and enhance security.
 
 
-Skills learnt: Python, using VS Code and Git (+GitHub), Azure DevOps, Pipelines, CI/CD, Azure Web App Deployment
+****Continuous Deployment:
+
+- I triggered the CI/CD pipeline on each commit to the main branch or on specific events (e.g., pull requests).
+- I kept the trigger as "main" so if any changes were made in the repos, it would continuously integrate the pipeline.
+- I validated and deploy the updated application and infrastructure automatically.
+
+
+Skills demonstrated: Programming in Python, using VS Code and Git (+GitHub), Azure DevOps, Pipelines, CI/CD, Azure Web App Deployment, Security, Scripting in Bash and PowerShell.
