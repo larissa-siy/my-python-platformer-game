@@ -21,7 +21,8 @@ Project Steps:
 ****Set up Azure resources:
 -  After uploading the file I created a resource group on Azure to host my new project. I created a Linux Web App using a Python 3.7 Runtime Stack, within the resource group, to host my Python App.
 - If I was to do this project again, I would use Terraform to define the infrastructure components. Terraform scripts in a combination of Bash and PowerShell to provision the resources would be a time saving way to provision the infrastructure components. However, I imported the infrastructure components using
-    ```resource azurerm_resource_group my-python-platformer-game_group {
+    ``` 
+  resource azurerm_resource_group my-python-platformer-game_group {
   name = "my-python-platformer-game_group"
   }
 
