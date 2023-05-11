@@ -26,6 +26,10 @@ Project Steps:
   resource azurerm_resource_group my-python-platformer-game_group {
   name = "my-python-platformer-game_group"
   }
+  
+  terraform import "azurerm_resource_group.my-python-platformer-game_group" "/subscriptions/772f1a68-850d-4639-92cc-278f98532405/resourceGroups/my-python-platformer-game_group"
+  
+  terraform init
 
 ****Configure the Python web application:
 ****Develop a Python web application using a web framework like Flask or Django.
