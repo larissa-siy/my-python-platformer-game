@@ -8,14 +8,6 @@ Overview:
 
 In this project, I will deploy a Python web application on Azure using Infrastructure as Code principles, leveraging Azure DevOps for CI/CD pipelines. We will use Terraform for infrastructure provisioning, YAML for configuration, and Azure services for hosting the web application.
 
-Skills Demonstrated:
-
-- Experience working with a broad set of cloud services
-- Scripting in Bash and PowerShell
-- Infrastructure as Code: Azure DevOps, Terraform
-- Configuration-driven approaches through YAML or JSON
-- Understanding of security principles and cloud networking
-
 Project Steps:
 
 **Set up Azure resources:
